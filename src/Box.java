@@ -15,7 +15,7 @@ public class Box {
     Boolean isNum = this.verify.isInteger(valueInput);
 
     while (!isNum) {
-      JOptionPane.showMessageDialog(null, "Digite somente numeros");
+      this.showMessage("Digite somente numeros");
       valueInput = JOptionPane.showInputDialog(null, message);
       isNum = this.verify.isInteger(valueInput);
     }
@@ -65,4 +65,19 @@ public class Box {
     return optionSelect;
   }
 
+  public void showMessage(String message) {
+    JOptionPane.showMessageDialog(null, message);
+  }
+
+  public void showMessageValueConvert(double value) {
+    String valueConvert = Double.toString(value);
+    String message = "O valor da convercao eh de " + valueConvert;
+    this.showMessage(message);
+
+  }
+
+  public int keepConversion() {
+    int valueOption = JOptionPane.showConfirmDialog(null, "Deseja continuar?", "Selecione uma opcao ", 1);
+    return valueOption;
+  }
 }

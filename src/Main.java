@@ -8,9 +8,12 @@ public class Main {
 
     // String optionConvertSelected = box.optionsConverteTo();
 
-    String optionCoinSelected = box.optionCoinSelected();
+    // String optionCoinSelected = box.optionCoinSelected();
 
-    System.out.println(optionCoinSelected);
+    // System.out.println(optionCoinSelected);
+    // box.showMessageValueConvert(0.1);
+    int keepOptionSelectd =  box.keepConversion();
+    System.out.println(keepOptionSelectd);
 
 
   }
