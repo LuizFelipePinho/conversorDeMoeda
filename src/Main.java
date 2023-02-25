@@ -6,7 +6,12 @@ public class Main {
     // double valueInput =  box.GetInputValue("Digite um valor");
     // System.out.println(valueInput);
 
-    String optionConvertSelected = box.optionsConverteTo();
+    // String optionConvertSelected = box.optionsConverteTo();
+
+    String optionCoinSelected = box.optionCoinSelected();
+
+    System.out.println(optionCoinSelected);
+
 
   }
 }

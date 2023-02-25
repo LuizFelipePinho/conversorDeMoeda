@@ -31,8 +31,30 @@ public class Box {
     String[] options = { "Conversor de Moeda", "Conversor de Temperatura" };
     String messageOption = "Escolha uma opcao";
     String title = "Menu";
+    String optionSelect = this.chooseOptions(options, messageOption, title);
+
+    return optionSelect;
+
+  }
+
+  public String optionCoinSelected() {
+
+    String[] options = { "De Reais a Dolares", "De Reais a Euros", "De Reais a Libras", "De Reais a Yenes",
+        "de Reais a Won Coreano", "De Dolares a Reais", "De Euros a reais", "De libras a Reias", "De Reais a Yenes",
+        "De Won Coreano a Reais" };
+
+    String messageOption = "Escolha a moeda para qual deseja converter";
+    String title = "Moedas";
+
+    String optionSelect = this.chooseOptions(options, messageOption, title);
+
+    return optionSelect;
+
+  }
+
+  public String chooseOptions(String[] options, String messageOption, String title) {
+
     String optionSelect;
-    
     try {
       optionSelect = JOptionPane.showInputDialog(null, messageOption, title, JOptionPane.PLAIN_MESSAGE,
           null, options, "Escolha").toString();
@@ -41,7 +63,6 @@ public class Box {
     }
 
     return optionSelect;
-
   }
 
 }
