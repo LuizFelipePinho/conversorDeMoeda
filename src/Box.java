@@ -26,4 +26,22 @@ public class Box {
 
   }
 
+  public String optionsConverteTo() {
+
+    String[] options = { "Conversor de Moeda", "Conversor de Temperatura" };
+    String messageOption = "Escolha uma opcao";
+    String title = "Menu";
+    String optionSelect;
+    
+    try {
+      optionSelect = JOptionPane.showInputDialog(null, messageOption, title, JOptionPane.PLAIN_MESSAGE,
+          null, options, "Escolha").toString();
+    } catch (Exception e) {
+      return "Cancelado";
+    }
+
+    return optionSelect;
+
+  }
+
 }
