@@ -11,18 +11,24 @@ public class Box {
   public double getInputValue(String message) {
 
     String valueInput = JOptionPane.showInputDialog(null, message);
+    
+    try {
+      Boolean isNum = this.verify.isInteger(valueInput);
 
-    Boolean isNum = this.verify.isInteger(valueInput);
+      while (!isNum) {
+        this.showMessage("Digite somente numeros");
+        valueInput = JOptionPane.showInputDialog(null, message);
+        isNum = this.verify.isInteger(valueInput);
+      }
+  
+      double valueConvert = Double.parseDouble(valueInput);
+  
+      return valueConvert;
 
-    while (!isNum) {
-      this.showMessage("Digite somente numeros");
-      valueInput = JOptionPane.showInputDialog(null, message);
-      isNum = this.verify.isInteger(valueInput);
+    } catch(Exception e) {
+      return 0.0;
     }
-
-    double valueConvert = Double.parseDouble(valueInput);
-
-    return valueConvert;
+    
 
   }
 
@@ -32,7 +38,6 @@ public class Box {
     String messageOption = "Escolha uma opcao";
     String title = "Menu";
     String optionSelect = this.chooseOptions(options, messageOption, title);
-
     return optionSelect;
 
   }
