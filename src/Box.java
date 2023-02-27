@@ -8,7 +8,7 @@ public class Box {
     this.verify = new Verify();
   }
 
-  public double GetInputValue(String message) {
+  public double getInputValue(String message) {
 
     String valueInput = JOptionPane.showInputDialog(null, message);
 
@@ -40,7 +40,7 @@ public class Box {
   public String optionCoinSelected() {
 
     String[] options = { "De Reais a Dolares", "De Reais a Euros", "De Reais a Libras", "De Reais a Yenes",
-        "de Reais a Won Coreano", "De Dolares a Reais", "De Euros a reais", "De libras a Reias", "De Reais a Yenes",
+        "de Reais a Won Coreano", "De Dolares a Reais", "De Euros a reais", "De libras a Reais", "De Reais a Yenes",
         "De Won Coreano a Reais" };
 
     String messageOption = "Escolha a moeda para qual deseja converter";
