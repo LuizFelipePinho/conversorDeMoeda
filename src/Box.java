@@ -74,9 +74,9 @@ public class Box {
     JOptionPane.showMessageDialog(null, message);
   }
 
-  public void showMessageValueConvert(double value) {
+  public void showMessageValueConvert(double value, String coin) {
     String valueConvert = Double.toString(value);
-    String message = "O valor da convercao eh de " + valueConvert;
+    String message = "O valor da convercao eh de " + valueConvert + " " + coin;
     this.showMessage(message);
 
   }

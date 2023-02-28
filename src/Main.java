@@ -17,19 +17,19 @@ public class Main {
         String optionCoinSelected = performConversion.box.optionCoinSelected();
 
         if (optionCoinSelected == "De Reais a Dolares") {
-          performConversion.realToShow(performConversion.currencyPrice.getDollar());
+          performConversion.realToShow(performConversion.currencyPrice.getDollar(), "Dollares");
 
         } else if (optionCoinSelected == "De Reais a Euros") {
-          performConversion.realToShow(performConversion.currencyPrice.getEuros());
+          performConversion.realToShow(performConversion.currencyPrice.getEuros(), "Euros");
 
         } else if (optionCoinSelected == "De Reais a Libras") {
-          performConversion.realToShow(performConversion.currencyPrice.getLibra());
+          performConversion.realToShow(performConversion.currencyPrice.getLibra(), "Libras");
 
         } else if (optionCoinSelected == "De Reais a Yenes") {
-          performConversion.realToShow(performConversion.currencyPrice.getIenes());
+          performConversion.realToShow(performConversion.currencyPrice.getIenes(), "Yenes");
 
         } else if (optionCoinSelected == "de Reais a Won Coreano") {
-          performConversion.realToShow(performConversion.currencyPrice.getWonCoreano());
+          performConversion.realToShow(performConversion.currencyPrice.getWonCoreano(), "Won Coreano");
 
         } else if (optionCoinSelected == "De Dolares a Reais") {
           performConversion.coinToRealShow(performConversion.currencyPrice.getDollar());

@@ -4,17 +4,20 @@ public class PerformConversion {
   CalculatorCoin calculatorCoin = new CalculatorCoin();
   CurrencyPrice currencyPrice = new CurrencyPrice();
 
-  public void realToShow(double quotation) {
+  public void realToShow(double quotation, String coin) {
     calculatorCoin.setValueCoinCurrent(quotation);
     double result = calculatorCoin.convertCurrencyRealTo();
-    box.showMessageValueConvert(result);
+    box.showMessageValueConvert(result, coin);
+    box.showMessage("Programa finalizado");
   }
 
 
-  public void coinToRealShow(double quotation) {
+  public void coinToRealShow(double quotation ) {
     calculatorCoin.setValueCoinCurrent(quotation);
     double result = calculatorCoin.convertCurrencyToReal();
-    box.showMessageValueConvert(result);
+    box.showMessageValueConvert(result, "Reais");
+    box.showMessage("Programa finalizado");
+
   }
   
 }
