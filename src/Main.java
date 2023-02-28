@@ -52,6 +52,7 @@ public class Main {
       }
 
     }
+    performConversion.box.showMessage("Programa finalizado");
 
   }
 }

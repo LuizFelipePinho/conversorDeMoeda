@@ -8,7 +8,6 @@ public class PerformConversion {
     calculatorCoin.setValueCoinCurrent(quotation);
     double result = calculatorCoin.convertCurrencyRealTo();
     box.showMessageValueConvert(result, coin);
-    box.showMessage("Programa finalizado");
   }
 
 
@@ -16,7 +15,6 @@ public class PerformConversion {
     calculatorCoin.setValueCoinCurrent(quotation);
     double result = calculatorCoin.convertCurrencyToReal();
     box.showMessageValueConvert(result, "Reais");
-    box.showMessage("Programa finalizado");
 
   }
   
