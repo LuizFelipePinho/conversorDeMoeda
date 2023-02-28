@@ -1,10 +1,12 @@
 public class Verify {
 
   public boolean isInteger(String str) {
-    if(str.length() <= 0) {
+    if( str.isEmpty()  ) {
       return false; 
     }
 
     return str.matches("[+-]?\\d*(\\.\\d+)?");
   }
+
+  
 }
