@@ -9,4 +9,12 @@ public class PerformConversion {
     double result = calculatorCoin.convertCurrencyRealTo();
     box.showMessageValueConvert(result);
   }
+
+
+  public void coinToRealShow(double quotation) {
+    calculatorCoin.setValueCoinCurrent(quotation);
+    double result = calculatorCoin.convertCurrencyToReal();
+    box.showMessageValueConvert(result);
+  }
+  
 }
